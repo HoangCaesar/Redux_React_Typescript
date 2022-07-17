@@ -1,0 +1,27 @@
+.root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 240px 1fr;
+    grid-template-areas: "header header" "sidebar main";
+
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    grid-area: header;
+}
+
+.sidebar {
+    margin-top: 64px;
+    grid-area: sidebar;
+    border-right: 1px solid #dedede;
+}
+
+.main {
+    margin-top: 64px;
+    padding: 16px 24px;
+    grid-area: main;
+}
